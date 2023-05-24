@@ -28,8 +28,7 @@
 						"type": "ParquetSource",
 						"storeSettings": {
 							"type": "AzureBlobFSReadSettings",
-							"recursive": true,
-							"wildcardFileName": "*",
+							"fileListPath": "landing",
 							"enablePartitionDiscovery": false
 						},
 						"formatSettings": {
