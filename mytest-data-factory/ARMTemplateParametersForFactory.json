@@ -5,11 +5,17 @@
 		"factoryName": {
 			"value": "mytest-data-factory"
 		},
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
 		"destination_ls_accountKey": {
 			"value": ""
 		},
 		"source_ls_accountKey": {
 			"value": ""
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://testsourcesa.dfs.core.windows.net/"
 		},
 		"destination_ls_properties_typeProperties_url": {
 			"value": "https://testdestinationsasa.dfs.core.windows.net/"

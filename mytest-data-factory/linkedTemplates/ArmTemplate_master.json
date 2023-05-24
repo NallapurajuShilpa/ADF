@@ -7,6 +7,10 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "mytest-data-factory"
 		},
+		"AzureDataLakeStorage1_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage1'"
+		},
 		"destination_ls_accountKey": {
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'destination_ls'"
@@ -14,6 +18,10 @@
 		"source_ls_accountKey": {
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'source_ls'"
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://testsourcesa.dfs.core.windows.net/"
 		},
 		"destination_ls_properties_typeProperties_url": {
 			"type": "string",
@@ -50,11 +58,17 @@
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
 					},
+					"AzureDataLakeStorage1_accountKey": {
+						"value": "[parameters('AzureDataLakeStorage1_accountKey')]"
+					},
 					"destination_ls_accountKey": {
 						"value": "[parameters('destination_ls_accountKey')]"
 					},
 					"source_ls_accountKey": {
 						"value": "[parameters('source_ls_accountKey')]"
+					},
+					"AzureDataLakeStorage1_properties_typeProperties_url": {
+						"value": "[parameters('AzureDataLakeStorage1_properties_typeProperties_url')]"
 					},
 					"destination_ls_properties_typeProperties_url": {
 						"value": "[parameters('destination_ls_properties_typeProperties_url')]"
