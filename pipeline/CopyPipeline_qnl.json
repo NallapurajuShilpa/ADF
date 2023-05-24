@@ -28,7 +28,7 @@
 						"type": "ParquetSource",
 						"storeSettings": {
 							"type": "AzureBlobFSReadSettings",
-							"fileListPath": "landing",
+							"fileListPath": "landing/part-00000-4ea82782-6afd-434c-8fee-42264167ffe1-c000.snappy.parquet",
 							"enablePartitionDiscovery": false
 						},
 						"formatSettings": {
